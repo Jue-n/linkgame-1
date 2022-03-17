@@ -4,4 +4,5 @@
     <string name="RankList">排行榜</string>
     <string name="BackgroundMusic">音乐</string>
     <string name="GameSound">音效</string>
+    <string name="exit">退出</string>
 </resources>

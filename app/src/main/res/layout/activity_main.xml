@@ -4,42 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
 
     <!--排行榜-->
 
-    <!--开始游戏-->
+    <!--开始-->
 
     <Button
         android:id="@+id/button"
         style="@style/RankListBut"
-        android:layout_width="101dp"
-        android:layout_height="118dp"
-        android:text="@string/RankList"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         app:icon="@android:drawable/sym_call_incoming"
         app:iconPadding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--背景音乐-->
+
+    <!--音效-->
 
     <Button
         android:id="@+id/button1"
         style="@style/StartButton"
-        android:layout_width="118dp"
-        android:layout_height="114dp"
+        android:layout_width="99dp"
+        android:layout_height="82dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121"
+        app:layout_constraintVertical_bias="0.915"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:checked="true"
+        android:showText="false"
+        android:splitTrack="false"
+        android:text="@string/BackgroundMusic"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        tools:checked="false" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:checked="true"
+        android:text="@string/GameSound"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -55,43 +92,17 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 
-    <!--背景音乐-->
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="110dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:checked="true"
-        android:showText="false"
-        android:splitTrack="false"
-        android:text="@string/BackgroundMusic"
-        android:textColor="@color/purple_200"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/button2"
+        style="@style/exit"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76"
-        tools:checked="false" />
-
-    <!--音效-->
-    <Switch
-        android:id="@+id/switch2"
-        style="@style/gamesound"
-        android:layout_width="110dp"
-        android:layout_height="80dp"
-        android:checked="true"
-        android:text="@string/GameSound"
-        android:textColor="@color/purple_200"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.023" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

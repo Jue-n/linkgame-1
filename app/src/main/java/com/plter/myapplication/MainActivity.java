@@ -1,10 +1,13 @@
 package com.plter.myapplication;
 
+import static java.lang.System.exit;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Switch;
 
 import java.io.IOException;
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Switch BackMusicSwitch;
     //BackgroundMusic bm;
     MediaPlayer mediaPlayer;
+    Button ExitApp;
 
 
     @Override
@@ -42,5 +46,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
+        this.ExitApp=this.findViewById(R.id.button2);
+        this.ExitApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exit(0);
+            }
+        });
     }
 }
