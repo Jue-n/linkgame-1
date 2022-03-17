@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    Switch sw;
+    Switch BackMusicSwitch;
     //BackgroundMusic bm;
     MediaPlayer mediaPlayer;
 
@@ -21,28 +21,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        sw =findViewById(R.id.switch1);
+        BackMusicSwitch =findViewById(R.id.switch1);
         mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.background);
         mediaPlayer.start();
-        sw.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (sw.isChecked()){
-                    try {
-                        mediaPlayer.prepare();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    mediaPlayer.start();
-                }else{
-                    if (mediaPlayer.isPlaying()){
-                        mediaPlayer.stop();
+        mediaPlayer.setLooping(true);
+        BackMusicSwitch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (BackMusicSwitch.isChecked()){
+                        try {
+                            mediaPlayer.prepare();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        mediaPlayer.start();
+                    }else{
+                        if (mediaPlayer.isPlaying()){
+                            mediaPlayer.stop();
+                        }
                     }
                 }
-
-
-               // bm.onStart();
-            }
-        });
+            });
     }
 }

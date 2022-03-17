@@ -10,21 +10,23 @@
 
 
     <!--排行榜-->
+
+    <!--开始游戏-->
+
     <Button
         android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="80dp"
+        style="@style/RankListBut"
+        android:layout_width="101dp"
+        android:layout_height="118dp"
         android:text="@string/RankList"
         app:icon="@android:drawable/sym_call_incoming"
         app:iconPadding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
-
-    <!--开始游戏-->
+        app:layout_constraintVertical_bias="0.763" />
 
     <Button
         android:id="@+id/button1"
@@ -36,7 +38,8 @@
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -53,10 +56,6 @@
         app:layout_constraintGuide_begin="20dp" />
 
     <!--背景音乐-->
-
-
-    <!--音效-->
-
     <Switch
         android:id="@+id/switch1"
         android:layout_width="110dp"
@@ -72,14 +71,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintVertical_bias="0.76"
         tools:checked="false" />
 
+    <!--音效-->
     <Switch
         android:id="@+id/switch2"
+        style="@style/gamesound"
         android:layout_width="110dp"
         android:layout_height="80dp"
         android:checked="true"
@@ -92,5 +93,5 @@
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

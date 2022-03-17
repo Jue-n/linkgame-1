@@ -16,10 +16,4 @@ public class BackgroundMusic extends AppCompatActivity implements MediaPlayer.On
     public void onCompletion(MediaPlayer mp){
         mediaPlayer.start();
     }
-    public void onStart(){
-        super.onStart();
-        mediaPlayer=MediaPlayer.create(this,R.raw.qwe);
-        mediaPlayer.setOnCompletionListener(this);
-        mediaPlayer.start();
-    }
 }
