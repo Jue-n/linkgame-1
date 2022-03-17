@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\23140\.android\avd\Nexus_6_Edited_API_30.avd" />
+            <type value="SERIAL_NUMBER" />
+            <value value="6c82bd1c" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-03-17T03:30:05.967248300Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-03-17T07:07:08.541698100Z" />
   </component>
 </project>
