@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">连连看</string>
+    <string name="StartGame">开始游戏</string>
+    <string name="RankList">排行榜</string>
+    <string name="BanbackgroundMusic">音乐</string>
+    <string name="GameSound">音效</string>
+</resources>
