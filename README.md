@@ -4,3 +4,5 @@
           mediaPlayer.setLooping(true)解决循环播放和闪退问题
           去掉了顶部导航栏（在AndroidManifest.xml文件中修改），colors.xml文件中添加自定义颜色
           加退出按钮，改布局
+
+22022/3/18
